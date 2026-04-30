@@ -1,5 +1,3 @@
-// ─── NEUROVA Core Types ───────────────────────────────────
-
 export interface ExecutionStep {
   number: number;
   title: string;
@@ -48,7 +46,12 @@ export interface HistoryEntry {
   createdAt: string;
 }
 
-export interface GenerateResponse {
-  plan: ExecutionPlan;
-  error?: string;
+export type PersonaMode = "founder" | "creator" | "student" | "professional";
+
+export interface Persona {
+  id: PersonaMode;
+  label: string;
+  icon: string;
+  description: string;
+  focus: string;
 }

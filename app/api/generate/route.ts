@@ -41,14 +41,14 @@ async function callOpenRouter(idea: string, persona: PersonaMode, apiKey: string
       "X-Title": "NEUROVA",
     },
     body: JSON.stringify({
-      model: "openai/gpt-4o",
+      model: "openai/gpt-4o-mini",
       messages: [
         { role: "system", content: buildSystemPrompt(persona) },
         { role: "user", content: buildUserPrompt(idea) },
       ],
       temperature: 0.7,
-      max_tokens: 3500,
-    }),
+      max_tokens: 400,
+    })
   });
 
   if (!res.ok) {

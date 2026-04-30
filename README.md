@@ -1,4 +1,4 @@
-# NEUROVA v2 — AI Business Strategist
+# NEUROVA — AI Business Strategist
 
 > Meet **Neuro** — your AI business strategist who transforms raw ideas into structured, actionable execution plans.
 

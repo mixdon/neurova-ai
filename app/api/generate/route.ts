@@ -47,7 +47,7 @@ async function callOpenRouter(idea: string, persona: PersonaMode, apiKey: string
         { role: "user", content: buildUserPrompt(idea) },
       ],
       temperature: 0.7,
-      max_tokens: 3500,
+      max_tokens: 2500,
     }),
   });
 

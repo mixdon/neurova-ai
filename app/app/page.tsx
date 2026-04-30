@@ -77,7 +77,7 @@ export default function AppPage() {
           {/* Persona selector — only in idle/error */}
           {(state === "idle" || state === "error") && (
             <div className="mb-5 rounded-sm border border-[var(--border)] bg-[var(--card)] p-5">
-              <PersonaSelector selected={persona} onChange={setPersona} disabled={state === "loading" as boolean}/>
+              <PersonaSelector selected={persona} onChange={setPersona} disabled={state === "loading"}/>
             </div>
           )}
 
